@@ -1,0 +1,70 @@
+.kategory-pilihan {
+    position: relative;
+    top: 160px;
+    margin: 8px 32px;
+    box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+  }
+  .menu-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(57, 56, 56);
+  background-size: 100%, 100%;
+  border-radius: 100%;
+}
+@font-face {
+    font-family: 'Dmserifdisplay'; /*memberikan nama bebas untuk font*/
+    src: url('DMSerifDisplay/DMSerifDisplay-Regular.ttf');/*memanggil file font eksternalnya di folder nexa*/
+    font-family:'Poppins';
+    src: url(asset/font/Poppins/Poppins-Regular.ttf);
+  }
+body{
+  font-family: Poppins;
+  background-color: #f7f6f6;
+}
+.tanda{
+  color: #00A9FF;
+  font-family: Dmserifdisplay ;
+}
+.card-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Login-box{
+  background-color: #00A9FF;;
+  text-align: center;
+  border-radius: 55px;
+}
+
+.login-form{
+  width:25rem;
+  height: 10rem;
+  border-radius: 15px;
+  border: #00A9FF ;
+}
+
+::placeholder{
+  color: white;
+}
+.scroll-container {
+  white-space: nowrap;
+}
+
+.scroll-container img {
+  display: inline-block;
+}
+
+.Imgcart{
+  height: 115px;
+  width: 131px;
+}
+
+a {
+  text-decoration: none;
+}
