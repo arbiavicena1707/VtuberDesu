@@ -52,7 +52,7 @@
       </div>
     </div>
   </nav>
- text-uppercasegit 
+
   <!--COROUSEL-->
   <div class="carousel slide" id="carouselExampleAutoplaying" data-bs-ride="carousel">
 
