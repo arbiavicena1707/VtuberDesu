@@ -29,11 +29,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html"
+                        <a class="nav-link active" aria-current="page" href="index.php"
                             style="max-width:max-content;">BERANDA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="allproduct.html">ALL PRODUCT</a>
+                        <a class="nav-link" href="allproduct.php">ALL PRODUCT</a>
                     </li>
                 </ul>
                 <form class="d-flex me-3" role="search">
@@ -43,13 +43,14 @@
                 </form>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item me-3" style="background-color: #89CFF3;padding:1rem;border-radius: 1.5rem;">
-                        <a class="nav-link" href="cart.html">Cart</a>
+                        <a class="nav-link" href="cart.php">Cart</a>
                     </li>
                     <li class="nav-item"
                         style="background-color: #00A9FF;padding:1rem;border-radius: 1.5rem; color: white;">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="login.php">Login</a>
                     </li>
                 </ul>
+              
 
             </div>
         </div>
@@ -67,34 +68,31 @@
             <div class="Login-box shadow p-4" style="width: 85%; background-color: #006599; border-radius: 10px;">
                 <form action="" method="post">
                     <div class="col-md-12">
-                        <h1 style=" color: antiquewhite; text-align: center;">Login</h1>
+                        <h1 style=" color: antiquewhite; text-align: center;">Register</h1>
                     </div>
                     <div class="col-md-12 mt-3 d-flex justify-content-center">
                         <input type="text" value="" placeholder="Username" class="form-control login-form "
                             style="background-color: transparent; border: 1px solid #ffffff; color: white; border-radius: 10px; font-size: 0.9rem; padding: 0.5rem; width: 70%; height: 50%;">
                     </div>
                     <div class="col-md-12 mt-3 d-flex justify-content-center">
+                        <input type="email" value="" placeholder="Email" class="form-control login-form "
+                            style="background-color: transparent; border: 1px solid #ffffff; color: white; border-radius: 10px; font-size: 0.9rem; padding: 0.5rem; width: 70%; height: 50%;">
+                    </div>
+                    <div class="col-md-12 mt-3 d-flex justify-content-center">
                         <input type="password" placeholder="Password" class="form-control login-form"
                             style="background-color: transparent; border: 1px solid #ffffff; color: white; border-radius: 10px; font-size: 0.9rem; padding: 0.5rem; width: 70%;height: 50%;">
                     </div>
-                    <div class="col-md-12">
-                        <div class="row justify-content-between align-items-center mt-3">
-                            <div class="col-md-6 text-start">
-                                <input type="checkbox" id="New" name="New" value="baru">
-                                <label for="New" style="color: white;">Ingat saya</label>
-                            </div>
-                            <div class="col-md-6 text-end">
-                                <a href="" style="text-decoration: none; color: white;">Lupa password?</a>
-                            </div>
-                        </div>
+                    <div class="col-md-12 mt-3 d-flex justify-content-center">
+                        <input type="text" value="" placeholder="Repeat Paswword" class="form-control login-form "
+                            style="background-color: transparent; border: 1px solid #ffffff; color: white; border-radius: 10px; font-size: 0.9rem; padding: 0.5rem; width: 70%; height: 50%;">
                     </div>
                     <div class="col-md-12">
                         <button class="btn form-control mt-5" type="submit"
                             style="background-color: #89CFF3; border-radius: 25px;">Login</button>
                     </div>
                     <div class="col-md-12 mt-4 text-center">
-                        <p style="color: white; font-weight: 300;">Belum memiliki akun? <a href="register.html"
-                                style="text-decoration: none; color: white; font-weight: 600;">Daftar
+                        <p style="color: white; font-weight: 300;">Sudah memiliki akun? <a href="login.php"
+                                style="text-decoration: none; color: white; font-weight: 600;">Login
                                 disini</a></p>
                     </div>
                 </form>

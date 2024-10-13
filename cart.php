@@ -29,10 +29,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html" style="max-width:max-content;">BERANDA</a>
+            <a class="nav-link active" aria-current="page" href="index.php" style="max-width:max-content;">BERANDA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="allproduct.html">ALL PRODUCT</a>
+            <a class="nav-link" href="allproduct.php">ALL PRODUCT</a>
           </li>
         </ul>
         <form class="d-flex me-3" role="search">
@@ -42,10 +42,10 @@
         </form>
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item me-3" style="background-color: #89CFF3;padding:1rem;border-radius: 1.5rem;">
-            <a class="nav-link" href="#">Cart</a>
+            <a class="nav-link" href="cart.php">Cart</a>
           </li>
           <li class="nav-item" style="background-color: #00A9FF;padding:1rem;border-radius: 1.5rem; color: white;">
-            <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link" href="login.php">Login</a>
           </li>
         </ul>
       </div>
