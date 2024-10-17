@@ -64,22 +64,6 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <img src="asset/img/PerProduct.png" alt="">
-                        <div class="mt-4">
-                            <div class="scroll-container d-flex overflow-auto">
-                                <img src="asset/img/Image2.jpg" class="img-thumbnail m-1" style="width: 100px;"
-                                    alt="Image 1">
-                                <img src="asset/img/Image2.jpg" class="img-thumbnail m-1" style="width: 100px;"
-                                    alt="Image 2">
-                                <img src="asset/img/Image2.jpg" class="img-thumbnail m-1" style="width: 100px;"
-                                    alt="Image 3">
-                                <img src="asset/img/Image.jpg" class="img-thumbnail m-1" style="width: 100px;"
-                                    alt="Image 4">
-                                <img src="asset/img/Image.jpg" class="img-thumbnail m-1" style="width: 100px;"
-                                    alt="Image 5">
-                                <img src="asset/img/Image.jpg" class="img-thumbnail m-1" style="width: 100px;"
-                                    alt="Image 6">
-                            </div>
-                        </div>
                     </div>
 
                     <div class="col-md-6">
