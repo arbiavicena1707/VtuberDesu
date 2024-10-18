@@ -68,3 +68,9 @@ body{
 a {
   text-decoration: none;
 }
+
+
+::placeholder {
+  color: rgb(232, 232, 232);
+  opacity: 1; /* Firefox */
+}
