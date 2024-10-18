@@ -98,7 +98,7 @@
     </div>
     <div class="col-md-12 text-center mt-5">
       <button class="btn" type="submit"
-        style="background-color: #89CFF3; border-radius: 25px; width: 50%; text-align: center;">Login</button>
+        style="background-color: #89CFF3; border-radius: 25px; width: 50%; text-align: center;">purchase</button>
     </div>
   </div>
 
