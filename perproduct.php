@@ -57,20 +57,20 @@
 
 
 <!--Detail Product-->
-<div class="container-fluid mt-3 ">
+<div class="container-fluid mt-3">
     <div class="container">
-        <div class="row d-flex justify-content-beetween">
-            <div class="col-md-12">
+        <div class="row d-flex justify-content-between">
+            <div class="col-12">
                 <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <img src="asset/img/PerProduct.png" alt="">
+                    <div class="col-md-6 col-12">
+                        <img src="asset/img/PerProduct.png" alt="" class="img-fluid">
                     </div>
 
-                    <div class="col-md-6">
-                        <h1>holoID Jiwa Karya Special Merchandise Part2</h1>
+                    <div class="col-md-6 col-12">
+                        <h1 class="mt-3 mt-md-0">holoID Jiwa Karya Special Merchandise Part2</h1>
                         <h3>CATEGORY</h3>
-                        <div class="col-md-12">
-                            <ul class="list-unstyled d-flex flex-wrap">
+                        <div class="col-12">
+                            <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-start">
                                 <li class="m-2">
                                     <button class="btn btn-sm"
                                         style="background-color:#89CFF3; border-radius: 15px; width: 150px;">
@@ -109,23 +109,19 @@
                                 </li>
                             </ul>
 
-
                             <div class="container mt-5">
-                                <div class="row ">
-                                    <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
                                         <!-- Label for Quantity -->
                                         <h3 class="">Quantity</h3>
-
-                                        <div class="d-flex align-items-center justify-content">
+                                        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
                                             <!-- Button Minus -->
                                             <button id="btn-minus" class="btn btn-sm"
                                                 style="background-color:#e5e5e5; border-radius:0 0 10 10; width: 40px; height: 40px; font-size: 20px; border-right: none;">-</button>
-
                                             <!-- Number Box -->
                                             <input id="number-display" type="text" class="form-control text-center"
                                                 value="1" readonly
                                                 style="width: 60px; font-size: 20px; border-radius: 0; border-left: none; border-right: none;">
-
                                             <!-- Button Plus -->
                                             <button id="btn-plus" class="btn btn-sm"
                                                 style="background-color:#e5e5e5; border-radius: 0 0 10 10; width: 40px; height: 40px; font-size: 20px; border-left: none;">+</button>
@@ -134,13 +130,15 @@
                                 </div>
                             </div>
                         </div>
-                        <h4 class="mt-5">Price:Rp.1.500.000</h4>
-                        <div class="col-md-12">
-                            <button class="btn btn-succes form-control mt-5 justify-content-center d-flex" type="submit"
-                                style="background-color:#52C936 ;border-radius: 25px;color: white;">Proceed to
-                                Purchase</button>
+
+                        <h4 class="mt-5">Price: Rp.1.500.000</h4>
+
+                        <div class="col-12">
+                            <button class="btn btn-success form-control mt-5 justify-content-center d-flex" type="submit"
+                                style="background-color:#52C936; border-radius: 25px; color: white;">Proceed to Purchase</button>
                         </div>
-                        <p class=" mt-5 overflow-auto" style="size: 14px;font-weight: 300;">
+
+                        <p class="mt-5 overflow-auto text-justify" style="font-size: 14px; font-weight: 300;">
                             Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
                             IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
                             IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
@@ -161,6 +159,7 @@
         </div>
     </div>
 </div>
+
 
 
 <!--recomendation-->
