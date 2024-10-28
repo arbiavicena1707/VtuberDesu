@@ -70,11 +70,11 @@
                         <h1 style=" color: antiquewhite; text-align: center;">Login</h1>
                     </div>
                     <div class="col-md-12 mt-3 d-flex justify-content-center">
-                        <input type="text" value="" placeholder="Username" class="form-control login-form "
+                        <input type="text" value="" placeholder="Username" class="form-control login-form " name="Username"
                             style="background-color: transparent; border: 1px solid #ffffff; color: white; border-radius: 10px; font-size: 0.9rem; padding: 0.5rem; width: 70%; height: 50%;">
                     </div>
                     <div class="col-md-12 mt-3 d-flex justify-content-center">
-                        <input type="password" placeholder="Password" class="form-control login-form"
+                        <input type="password" placeholder="Password" class="form-control login-form" name="Password"
                             style="background-color: transparent; border: 1px solid #ffffff; color: white; border-radius: 10px; font-size: 0.9rem; padding: 0.5rem; width: 70%;height: 50%;">
                     </div>
                     <div class="col-md-12">

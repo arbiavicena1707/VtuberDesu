@@ -11,13 +11,13 @@
     <form action="Data.php" enctype="multipart/form-data" method="post">
         <!-- Inputikan Nama  -->
         Nama: <input type="text" name="Nama" value=""><br>
-        
+
         <!-- Inputkan NISN -->
         NISN: <input type="number" name="NISN"><br>
-        
+
         <!-- Inputkan NIS -->
         NIS: <input type="text" name="NIS"><br>
-        
+
         Pilih Jurusan Anda:
         <select name="Jurusan" id="">
             <option value="0">Pilih Jurusan</option>
@@ -25,19 +25,19 @@
             <option value="2">TJKT</option>
             <option value="3">DKV</option>
         </select><br>
-        
+
         Tanggal lahir: <input type="date" name="Tanggal_Lahir"><br>
-        
+
         Alamat:<textarea name="Alamat"></textarea><br>
-        
+
         No telepon: <input type="number" name="Telepon" id=""><br>
-        
+
         Gender:
         <input type="radio" name="Gender" value="Laki-Laki" id="Laki-Laki">
         <label for="Laki-Laki">Laki-Laki</label>
         <input type="radio" name="Gender" value="Perempuan" id="Perempuan">
         <label for="Perempuan">Perempuan</label><br>
-        
+
         Hobi:<br>
         <input type="checkbox" name="Hobi[]" value="Tidur" id="Tidur">
         <label for="Tidur">Tidur</label><br>
@@ -47,10 +47,10 @@
         <label for="LiatFilm">Liat Film</label><br>
         <input type="checkbox" name="Hobi[]" value="Anime" id="Anime">
         <label for="Anime">Anime</label><br>
-        
+
         Foto: <input type="file" name="Foto" id=""><br>
-        
-        <input type="submit" value="Kirim File">
+
+        <input type="submit" name="submit" value="Kirim File">
     </form>
 </body>
 
