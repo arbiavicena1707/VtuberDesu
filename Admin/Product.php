@@ -20,7 +20,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <h3 class="text-center mb-4">Tambah Produk</h3>
-                <form action="" enctype="multipart/form-data" method="post" class="p-4 border rounded">
+                <form action="ProductData.php" enctype="multipart/form-data" method="post" class="p-4 border rounded">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nama</label>
                         <input type="text" name="Name" id="name" class="form-control" required>
@@ -38,8 +38,8 @@
                         <input type="number" name="Stock" id="stock" class="form-control" required>
                     </div>
                     <div class="mb-3">
-                        <label for="category_id" class="form-label">Category</label>
-                        <select id="category_id" name="category_id" class="form-control" required>
+                        <label for="Category" class="form-label">Category</label>
+                        <select id="Category" name="Category" class="form-control" required>
                             <option value="0">Pilih Category</option>
                             <option value="1">Real life</option>
                             <option value="2">Digital</option>
@@ -57,29 +57,7 @@
         </div>
     </div>
 
-    <?php
-    if (isset($_POST['submit'])) {
-        $Name = $_POST['Name'];
-        $Description = $_POST['Description'];
-        $Price = $_POST['Price'];
-        $Stock = $_POST['Stock'];
-        $Image = $_FILES['Image']['name'];
-    ?>
-        <div class="mt-5 p-4 border rounded bg-light">
-            <h4>Detail Produk:</h4>
-            <p>Nama: <?= $Name ?></p>
-            <p>Deskripsi: <?= $Description ?></p>
-            <p>Harga: <?= $Price ?></p>
-            <p>Stok: <?= $Stock ?></p>
-            <p>Gambar: <?= $Image ?></p>
-        </div>
-    <?php
-    } else {
-    ?>
-        <p class="mt-4 text-center text-danger">Belum memasukkan Data</p>
-    <?php
-    }
-    ?>
+   
 
 </body>
 
