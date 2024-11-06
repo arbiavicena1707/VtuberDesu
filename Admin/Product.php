@@ -40,7 +40,7 @@
                     <div class="mb-3">
                         <label for="Category" class="form-label">Category</label>
                         <select id="Category" name="Category" class="form-control" required>
-                            <option value="0">Pilih Category</option>
+                            <option selected value="0">Pilih Category</option>
                             <option value="1">Real life</option>
                             <option value="2">Digital</option>
                         </select>
