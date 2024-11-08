@@ -50,7 +50,7 @@
                         <input type="file" name="Image" id="image" class="form-control">
                     </div>
                     <div class="text-center">
-                        <input type="submit" name="submit" value="Confirm" class="btn btn-primary w-100">
+                        <input type="submit" name="BtnInput" value="Confirm" class="btn btn-primary w-100">
                     </div>
                 </form>
             </div>

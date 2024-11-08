@@ -1,4 +1,5 @@
 <?php
+$rootDir = $_SERVER['DOCUMENT_ROOT'].'/VtuberDesu/';
  $Server="localhost";
  $User="root";
  $Pass="";

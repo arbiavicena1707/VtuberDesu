@@ -2,4 +2,5 @@
 require_once "Koneksi.php";
 require_once "Function.Php";
 require_once "../Admin/ProductData.php";
-?>z
+require_once "Fungsi_upload.php";
+?>

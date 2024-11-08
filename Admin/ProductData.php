@@ -1,13 +1,14 @@
-
 <?php
 require_once "../Config/Config.php";
-if (isset($_POST['submit'])) {
+
+if (isset($_POST['BtnInput'])) {
     $Name = $_POST['Name'];
     $Description = $_POST['Description'];
     $Price = $_POST['Price'];
     $Stock = $_POST['Stock'];
     $Category = $_POST['Category'];
-    $Image = $_FILES['Image']['name'];
+    $Image = basename($_FILES['Image']['name']);
+
 ?>
     <div>
         <h4>Detail Produk:</h4>
@@ -21,7 +22,7 @@ if (isset($_POST['submit'])) {
         <p>Category: <?= $Category_List[$Category] ?></p>
         <p>Gambar: <?= $Image ?></p>
     </div>
-    <?php
+<?php
 
     $Data = [
         'Name' => $Name,
@@ -29,18 +30,24 @@ if (isset($_POST['submit'])) {
         'Price' => $Price,
         'Stock' => $Stock,
         'Category' => $Category,
+        'Image' => $Image,
     ];
 
     $validasi = ValidasiData($Data);
 
     if ($validasi == 0) {
         echo "data sudah lengkap siap di inputkan";
+        $result = InputProduct($Data, $Koneksi);
+        $folderTujuan = $rootDir . "uploads";
+        if ($result) {
+            $upload = tambahGambar($folderTujuan, $_FILES['Image']);
+            if ($upload)
+                header("location:Product.php?status=1");
+            else
+                header("location:Product.php?errno=1");
+        } else header("location:Product.php?errno=1");
     } else {
         echo "data $validasi kurang";
     }
-} else {
-    ?>
-    <p class="mt-4 text-center text-danger">Belum memasukkan Data</p>
-<?php
 }
 ?>
