@@ -28,7 +28,7 @@ function InputProduct($Data, $Koneksi)
         return "FAILED";
     }
 
-    mysqli_stmt_bind_param($stmt, 'ssiiiss', $Name, $Description, $Price, $Stock, $Category,$Image, $Tanggal);
+    mysqli_stmt_bind_param($stmt, 'ssdiiss', $Name, $Description, $Price, $Stock, $Category,$Image, $Tanggal);
     $result = mysqli_stmt_execute($stmt);
 
     if (!$result)
@@ -36,4 +36,15 @@ function InputProduct($Data, $Koneksi)
 
     mysqli_stmt_close($stmt);
     return true;
+}
+
+function ViewProduct($koneksi){
+    $sql = "SELECT product.Name as namaProduct, product.Description, product.Price ,categories.Name as namaKategori,Product.Stock,Product.Categories_Id,product.Image,product.Created_at FROM `product`
+            LEFT JOIN categories ON categories.Id = product.Categories_Id
+            WHERE 1";
+
+    $stmt = mysqli_query($koneksi, $sql);
+
+    if(mysqli_num_rows($stmt) > 0) return mysqli_fetch_all($stmt, MYSQLI_ASSOC);
+    else return false; 
 }
