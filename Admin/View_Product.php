@@ -35,7 +35,7 @@ require_once "../config/config.php";
             <div class="card-body">
                 <div class="table-responsive">
                     <?php
-                        $product = ViewProduct($Koneksi);
+                        $product = ViewProduct($koneksi);
 
                         if($product == 0 ){
                             echo "Tidak ada data";
