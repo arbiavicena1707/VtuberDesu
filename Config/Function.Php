@@ -1,6 +1,6 @@
 <?php
 
-function ValidasiData($Data)
+function validasiData($Data)
 {
     foreach ($Data as $Product => $Value) {
         $Value = trim($Value);
@@ -11,7 +11,7 @@ function ValidasiData($Data)
     return 0;
 }
 
-function InputProduct($Data, $Koneksi)
+function inputProduct($Data, $Koneksi)
 {
     $Name = $Data['Name'];
     $Description = $Data['Description'];
@@ -21,14 +21,14 @@ function InputProduct($Data, $Koneksi)
     $Image = $Data['Image'];
 
     $Tanggal =  date("Y-m-d H:i:s");;
-    
+
     $sql = "INSERT INTO Product (Name, Description, Price, Stock, Categories_Id	,Image, Created_at) VALUES (?, ?, ?, ?, ?,?, ?)";
     $stmt = mysqli_prepare($Koneksi, $sql);
     if ($stmt == false) {
         return "FAILED";
     }
 
-    mysqli_stmt_bind_param($stmt, 'ssdiiss', $Name, $Description, $Price, $Stock, $Category,$Image, $Tanggal);
+    mysqli_stmt_bind_param($stmt, 'ssdiiss', $Name, $Description, $Price, $Stock, $Category, $Image, $Tanggal);
     $result = mysqli_stmt_execute($stmt);
 
     if (!$result)
@@ -38,13 +38,34 @@ function InputProduct($Data, $Koneksi)
     return true;
 }
 
-function ViewProduct($koneksi){
-    $sql = "SELECT product.Name as namaProduct, product.Description, product.Price ,categories.Name as namaKategori,Product.Stock,Product.Categories_Id,product.Image,product.Created_at FROM `product`
+function viewProduct($koneksi)
+{
+    $sql = "SELECT product.Id, product.Name as namaProduct, product.Description, product.Price ,categories.Name as namaKategori,Product.Stock,Product.Categories_Id,product.Image,product.Created_at FROM `product`
             LEFT JOIN categories ON categories.Id = product.Categories_Id
             WHERE 1";
 
     $stmt = mysqli_query($koneksi, $sql);
 
-    if(mysqli_num_rows($stmt) > 0) return mysqli_fetch_all($stmt, MYSQLI_ASSOC);
-    else return false; 
+    if (mysqli_num_rows($stmt) > 0) return mysqli_fetch_all($stmt, MYSQLI_ASSOC);
+    else return false;
+}
+
+function viewKategori($koneksi)
+{
+    $sql = "SELECT * FROM categories";
+    $stmt = mysqli_query($koneksi, $sql);
+
+    if (mysqli_num_rows($stmt) > 0) return mysqli_fetch_all($stmt, MYSQLI_ASSOC);
+    else return false;
+}
+
+function deleteProduct($koneksi, $Id)
+{
+    $sql = "DELETE FROM `product` WHERE Id = ?";
+    $stmt = mysqli_prepare($koneksi, $sql);
+
+    mysqli_stmt_bind_param($stmt, 'i', $Id);
+    $Result = mysqli_stmt_execute($stmt);
+    if($Result) return true;
+    else return false;
 }

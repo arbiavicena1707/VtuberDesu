@@ -33,7 +33,7 @@ if (isset($_POST['BtnInput'])) {
         'Image' => $Image,
     ];
 
-    $validasi = ValidasiData($Data);
+    $validasi = validasiData($Data);
 
     if ($validasi == 0) {
         echo "data sudah lengkap siap di inputkan";
@@ -49,5 +49,23 @@ if (isset($_POST['BtnInput'])) {
     } else {
         echo "data $validasi kurang";
     }
+
+} else if (isset($_GET["Del"])) {
+    $Id = $_GET['Del'] ?? null;
+    var_dump($Id);
+    if ($Id === null || !ctype_alnum(text: $Id)) {
+        header("location:View_Product.php?errno=3");
+        
+    } else {
+        $Result = DeleteProduct($Koneksi, $Id);
+        if ($Result)
+            header("location:View_Product.php?success=1");
+        else
+            header("location:View_Product.php?errno=5");
+    }
 }
+
+
+
+
 ?>

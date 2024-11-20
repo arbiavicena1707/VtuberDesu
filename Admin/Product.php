@@ -1,3 +1,8 @@
+<?php
+require "../config/config.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,8 +46,20 @@
                         <label for="Category" class="form-label">Category</label>
                         <select id="Category" name="Category" class="form-control" required>
                             <option selected value="0">Pilih Category</option>
-                            <option value="1">Real life</option>
-                            <option value="2">Digital</option>
+                            <?php
+                            $pengarang = viewKategori($Koneksi);
+
+                            if ($pengarang != false) {
+                                foreach ($pengarang as $recA) {
+                            ?>
+
+                                    <option value="<?= $recA['Id'] ?>"><?= $recA['Name'] ?></option>
+
+                            <?php
+                                }
+                            }
+                            ?>
+
                         </select>
                     </div>
                     <div class="mb-3">
@@ -57,7 +74,7 @@
         </div>
     </div>
 
-   
+
 
 </body>
 
