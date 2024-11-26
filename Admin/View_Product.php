@@ -78,8 +78,9 @@ require  "../config/config.php";
                                         <td><?= $Data['Image'] ?></td>
                                         <td>
                                             <a href="" class="btn btn-sm btn-warning">Update</a>
+                                            <a href="?Del=<?=$Data['Id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')" >Delete</a>
                                         </td>
-                                        <a href="?Del=< ?= $Data['Id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')" >Delete</a>
+                                        
 
 
                                     </tr>

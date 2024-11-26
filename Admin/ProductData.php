@@ -17,7 +17,7 @@ if (isset($_POST['BtnInput'])) {
         <p>Harga: <?= $Price ?></p>
         <p>Stok: <?= $Stock ?></p>
         <?php
-        $Category_List = ["Category", "Real Life", "Digital"];
+        $Category_List = ["Category", "Real Life", "Digital","KW"];
         ?>
         <p>Category: <?= $Category_List[$Category] ?></p>
         <p>Gambar: <?= $Image ?></p>
